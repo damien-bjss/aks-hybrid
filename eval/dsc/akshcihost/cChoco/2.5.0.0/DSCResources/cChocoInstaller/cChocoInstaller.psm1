@@ -178,10 +178,10 @@ Function Install-Chocolatey {
     Write-Verbose 'Install-Chocolatey'
 
     #Create install directory if it does not exist
-    If(-not (Test-Path -Path $InstallDir)) {
-        Write-Verbose "[ChocoInstaller] Creating $InstallDir"
-        New-Item -Path $InstallDir -ItemType Directory
-    }
+    #If(-not (Test-Path -Path $InstallDir)) {
+    #    Write-Verbose "[ChocoInstaller] Creating $InstallDir"
+    #    New-Item -Path $InstallDir -ItemType Directory
+    #}
 
     #Set permanent EnvironmentVariable
     Write-Verbose 'Setting ChocolateyInstall environment variables'
